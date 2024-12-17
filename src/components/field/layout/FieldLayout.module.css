@@ -1,0 +1,41 @@
+.fieldLayout {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.fieldLayout ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 60px);
+	grid-gap: 5px;
+}
+
+.fieldLayout li {
+	width: 60px;
+	height: 60px;
+	background: #ffffff;
+	border: 2px solid #333;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 60px; /* Вертикальное выравнивание текста */
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.fieldLayout li:hover {
+	background-color: #f0f0f0;
+}
+
+.fieldLayout li.occupied {
+	background: #ccc;
+	cursor: default;
+}
+
+.fieldLayout li.empty {
+	background: #fff;
+}

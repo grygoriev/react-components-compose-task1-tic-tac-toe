@@ -1,0 +1,26 @@
+.gameLayout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
+	gap: 20px;
+	width: 300px;
+	margin: 40px auto;
+}
+
+.gameLayout button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #00aaff;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.gameLayout button:hover {
+	background-color: #008ecc;
+}

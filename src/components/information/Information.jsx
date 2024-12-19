@@ -10,5 +10,5 @@ export const Information = ({ isDraw, isGameEnded, currentPlayer }) => {
 			return `Ходит ${currentPlayer}`;
 		}
 	};
-	return <InformationLayout state={state} />;
+	return <InformationLayout>{state()}</InformationLayout>;
 };

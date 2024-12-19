@@ -1,10 +1,5 @@
 import styles from './InformationLayout.module.css';
-import PropTypes from 'prop-types';
 
-export const InformationLayout = ({state}) => {
-	return <div className={styles.informationLayout}>{state}</div>;
+export const InformationLayout = ({children}) => {
+	return <div className={styles.informationLayout}>{children}</div>;
 }
-
-InformationLayout.propTypes = {
-	state: PropTypes.string,
-};

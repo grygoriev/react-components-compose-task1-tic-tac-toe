@@ -5,14 +5,11 @@ import PropTypes from 'prop-types';
 
 export const GameLayout = ({
 	currentPlayer,
-	setCurrentPlayer,
 	isGameEnded,
-	setIsGameEnded,
 	isDraw,
-	setIsDraw,
 	field,
-	setField,
 	startFromBegin,
+	checkGameStatus
 }) => {
 
 	return (
@@ -24,12 +21,8 @@ export const GameLayout = ({
 			/>
 			<Field
 				field={field}
-				setField={setField}
-				currentPlayer={currentPlayer}
-				setCurrentPlayer={setCurrentPlayer}
-				setIsDraw={setIsDraw}
 				isGameEnded={isGameEnded}
-				setIsGameEnded={setIsGameEnded}
+				checkGameStatus={checkGameStatus}
 			/>
 			<button onClick={startFromBegin}>Начать заново</button>
 		</div>
